@@ -3,6 +3,13 @@
 * {
     font-family: 'Signika Negative', sans-serif;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg: #353535;
+    --main-txt: #f0c000;
 }
 
 .profile {
@@ -13,4 +20,41 @@
 .gallery {
     width: auto;
     height: 30vh;
+}
+
+nav {
+    top: 0;
+    display: flex;
+    background-color: var(--main-bg);
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+nav h1 {
+    margin: 4px 6px;
+    font-size: 6vh;
+    font-weight: 700;
+    color: var(--main-txt);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main-txt);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.highlight {
+    background-color: var(--main-txt);
+    color: var(--main-bg)
 }
