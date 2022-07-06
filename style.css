@@ -10,7 +10,25 @@
 :root {
     --main-bg: #353535;
     --main-txt: #f0c000;
-    --alt-bg: #828282;
+    --alt-bg: #474747;
+    --alt-txt: #c89300;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-txt);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--alt-txt);
 }
 
 .profile {
@@ -53,9 +71,52 @@ nav ul a {
     color: var(--main-txt);
     padding: 10px;
     border-radius: 12px;
+    margin: 0 3px;
+}
+
+nav ul a:hover {
+    background-color: var(--alt-txt);
+    color: var(--main-bg);
 }
 
 .highlight {
     background-color: var(--main-txt);
     color: var(--main-bg)
+}
+
+.highlight:hover {
+    background-color: var(--alt-txt);
+}
+
+.title {
+    padding: 32vh 0 38vh 20px;
+    color: var(--main-txt);
+    background-color: var(--alt-bg);
+}
+
+.title h1 {
+    font-size: 15vh;
+    font-weight: 700;
+}
+
+.title h2 {
+    font-size: 6vh;
+    font-weight: 600;
+}
+
+.title h3 {
+    font-size: 3.5vh;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--main-bg);
+    color: var(--main-txt);
+    padding: 4px;
+}
+
+footer h1 {
+    font-size: 6vh;
+    font-weight: 700;
+    text-align: center;
 }
