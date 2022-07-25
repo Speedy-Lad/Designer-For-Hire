@@ -12,6 +12,7 @@
     --main-txt: #f0c000;
     --alt-bg: #474747;
     --alt-txt: #c89300;
+    --dark: #242424;
 }
 
 ::-webkit-scrollbar {
@@ -33,12 +34,16 @@
 
 .profile {
     width: auto;
-    height: 45vh;
+    height: 42vh;
 }
 
 .gallery {
     width: auto;
-    height: 30vh;
+    height: 28vh;
+}
+
+body {
+    background-color: var(--alt-bg);
 }
 
 nav {
@@ -67,11 +72,12 @@ nav ul {
 
 nav ul a {
     font-weight: 600;
+    font-size: 2vh;
     text-decoration: none;
     color: var(--main-txt);
     padding: 10px;
     border-radius: 12px;
-    margin: 0 3px;
+    margin: 0 4px;
 }
 
 nav ul a:hover {
@@ -119,4 +125,94 @@ footer h1 {
     font-size: 6vh;
     font-weight: 700;
     text-align: center;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--main-bg);
+    margin-bottom: 16vh;
+}
+
+.intro p {
+    font-size: 4.5vh;
+    margin: 25px 25px 25px 30px;
+    font-weight: 400;
+    color: var(--main-txt);
+}
+
+.intro .profile {
+    border: solid var(--dark) 10px;
+    border-radius: 14px;
+}
+
+.text {
+    background-color: var(--main-bg);
+    color: var(--main-txt);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text .gallery {
+    border: solid var(--dark) 10px;
+    border-radius: 12px;
+    margin: 15px 10px;
+    height: 31vh;
+}
+
+.text h1 {
+    font-size: 6vh;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+}
+
+.text p {
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.text a {
+    font-size: 2.5vh;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--main-bg);
+    background-color: var(--main-txt);
+    padding: 8px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.text a:hover {
+    background-color: var(--alt-txt);
+}
+
+.done {
+    color: var(--main-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35vh 0;
+}
+
+.done a {
+    color: var(--main-txt);
+}
+
+.done a:hover {
+    color: var(--alt-txt);
+}
+
+.done h1 {
+    font-size: 7vh;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+
+.done p {
+    font-size: 3vh;
+    font-weight: 600;
 }
