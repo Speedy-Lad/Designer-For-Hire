@@ -160,7 +160,7 @@ footer h1 {
     border: solid var(--dark) 10px;
     border-radius: 12px;
     margin: 15px 10px;
-    height: 31vh;
+    height: 28vh;
 }
 
 .text h1 {
@@ -215,4 +215,37 @@ footer h1 {
 .done p {
     font-size: 3vh;
     font-weight: 600;
+}
+
+.info {
+    padding: 20px;
+    color: var(--main-txt);
+    background-color: var(--main-bg);
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    margin-bottom: 25vh;
+    align-items: center;
+    text-align: center;
+}
+
+.info p {
+    font-size: 5vh;
+    font-weight: 400;
+}
+
+.details {
+    text-align: left;
+    padding: 0 3vh;
+}
+
+.details h2 {
+    font-size: 6vh;
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+
+.details p {
+    font-size: 3.5vh;
+    font-weight: 400;
+    margin: 0 0 1vh 0;
 }
