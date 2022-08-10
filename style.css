@@ -67,11 +67,11 @@ nav {
     top: 0;
     display: flex;
     background-color: var(--main-bg);
-    position: fixed;
+    position: fixed; /* Sets the nav bar in place so it will always be displayed on screen */
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.33);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.33); /* Creates a shadow at the bottom of nav bar */
 }
 
 /* Sets the properties of the h1 tags in the nav bar */
@@ -93,12 +93,12 @@ nav ul {
 nav ul a {
     font-weight: 600;
     font-size: 3vh;
-    text-decoration: none;
+    text-decoration: none; /* Removes the bullet points */
     color: var(--main-txt);
     padding: 10px;
     border-radius: 12px;
     margin: 0 4px;
-    transition: background-color 1s ease;
+    transition: background-color 1s ease; /* Creates a colour transition when hovered on by the mouse */
 }
 
 /* Sets a different background colour for the button to take you to the showcase.html page */
@@ -266,7 +266,7 @@ properties as shown below in other parts of the CSS */
     color: var(--main-txt);
     background-color: var(--main-bg);
     display: grid;
-    grid-template-columns: 1.5fr 3fr;
+    grid-template-columns: 1fr 2fr;
     margin-bottom: 22vh;
     align-items: center;
     text-align: center;
@@ -329,7 +329,7 @@ also just determines some other properties of said details list */
 .img .gallery {
     background-color: var(--main-txt);
     margin: 0;
-    border: transparent;
+    border: transparent; /* Removes a border that would normally be there */
     background-color: var(--dark);
 }
 
