@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 
+/* Sets the default font size and weight for the website
+and also removes the default margin and padding */
 * {
     font-family: 'Signika Negative', sans-serif;
     font-weight: 500;
@@ -7,6 +9,7 @@
     padding: 0;
 }
 
+/* Determines the variables for the colour scheme of the website */
 :root {
     --main-bg: #353535;
     --main-txt: #f0c000;
@@ -15,6 +18,8 @@
     --dark: #242424;
 }
 
+
+/* The following commands change the ugly default scrollbar to my cool custom scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -32,18 +37,23 @@
     background: var(--alt-txt);
 }
 
+/* Sets the size of images with the class "profile" (portrait images) */
 .profile {
-    width: auto;
-    height: 42vh;
+    width: 20vw;
+    height: auto;
 }
 
+/* Sets the size of images with the class "gallery" (landscape images) */
 .gallery {
-    width: auto;
-    height: 28vh;
+    width: 28vw;
+    height: auto;
 }
 
+/* Sets the background colour of the page */
 body {
     background-color: var(--alt-bg);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -78,6 +88,7 @@ nav ul a {
     padding: 10px;
     border-radius: 12px;
     margin: 0 4px;
+    transition: background-color 1s ease;
 }
 
 nav ul a:hover {
@@ -186,6 +197,7 @@ footer h1 {
     padding: 8px;
     border-radius: 12px;
     margin-bottom: 25px;
+    transition: background-color 0.5s ease-in;
 }
 
 .text a:hover {
@@ -203,6 +215,7 @@ footer h1 {
 .done a {
     color: var(--main-txt);
     margin-bottom: 60px;
+    transition: color 0.2s ease;
 }
 
 .done a:hover {
@@ -308,6 +321,7 @@ footer h1 {
     padding: 8px;
     border-radius: 12px;
     margin-top: 20px;
+    transition: background-color 0.3s ease-in;
 }
 
 .plug a:hover {
@@ -359,23 +373,11 @@ footer h1 {
 
 .end a {
     color: var(--main-txt);
+    transition: color 0.2s ease;
 }
 
 .end a:hover {
     color: var(--alt-txt);
-}
-
-@media only screen and (max-width: 1250px) {
-    .imgs {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .imgs .gallery {
-        width: auto;
-        height: 50vh;
-        margin: 10px;
-    }
 }
 
 @media only screen and (max-width: 865px) {
@@ -384,13 +386,8 @@ footer h1 {
         text-align: center;
     }
 
-    .intro .profile {
-        height: 50vh;
-        margin-bottom: 3vh;
-    }
-
     .imgs .gallery {
-        height: 32vh;
+        height: 25vh;
     }
 
     .about .text {
@@ -423,19 +420,15 @@ footer h1 {
         text-align: center;
         margin-bottom: 40px;
     }
-
-    .details p {
-        margin-bottom: 10px;
-    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     nav ul a{
-        font-size: 2.5vh;
+        font-size: 3vw;
     }
 
     nav h1 {
-        font-size: 6vh;
+        font-size: 7vw;
     }
 
     .done {
