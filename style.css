@@ -119,7 +119,7 @@ nav ul a:hover {
 
 /* Sets the colours of the title segment of each page */
 .title {
-    padding: 32vh 0 38vh 20px;
+    padding: 33vh 0 38vh 20px;
     color: var(--main-txt);
     background-color: var(--alt-bg);
 }
@@ -320,13 +320,16 @@ also just determines some other properties of said details list */
     border: solid var(--dark) 10px;
     border-radius: 15px;
     display: flex;
-    margin: 20px;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
 }
 
-.img p {
-    margin: 0;
-    background-color: var(--dark);
+.img a {
+    background-color: none;
+    color: var(--main-txt);
     width: fit-content;
+    margin: 0 0 10px 0;
 }
 
 .img .gallery {
@@ -429,7 +432,7 @@ as it has some differences from the index.html and showcase.html pages */
 
     /* Makes the text on the about.html page smaller and changes the margins slightly */
     .about .text p, .about .text2 p {
-        font-size: 3.5vh;
+        font-size: 4vh;
         margin: 50px 0 0 0;
         text-align: center;
     }
@@ -481,7 +484,7 @@ as it has some differences from the index.html and showcase.html pages */
 @media only screen and (max-width: 800px) {
     /* Resizes parts of the navigation bar so they don't completely break */
     nav ul a{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     nav h1 {
@@ -501,15 +504,15 @@ as it has some differences from the index.html and showcase.html pages */
 
     /* Makes the headers on the title screen of each page smaller to fit the page */
     .title h1 {
-        font-size: 15vw;
+        font-size: 13.5vw;
     }
 
     .title h2 {
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 
     .title h3 {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     /* Makes the text on the information part of contact.html smaller to fit the page */
