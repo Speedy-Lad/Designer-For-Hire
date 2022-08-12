@@ -98,7 +98,7 @@ nav ul a {
     padding: 10px;
     border-radius: 12px;
     margin: 0 4px;
-    transition: background-color 1s ease; /* Creates a colour transition when hovered on by the mouse */
+    transition: background-color 0.5s ease; /* Creates a colour transition when hovered on by the mouse */
 }
 
 /* Sets a different background colour for the button to take you to the showcase.html page */
@@ -222,7 +222,7 @@ properties as shown below in other parts of the CSS */
     padding: 8px;
     border-radius: 12px;
     margin-bottom: 25px;
-    transition: background-color 0.5s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
 .text a:hover {
@@ -301,7 +301,7 @@ also just determines some other properties of said details list */
 
 /* Determines how the paragraph tags on the showcase.html page look */
 .showcase .text p {
-    margin: 50px 0 10px 0;
+    margin: 30px 0 10px 0;
     font-size: 3.5vh;
     font-weight: 600;
     text-align: center;
@@ -314,29 +314,8 @@ also just determines some other properties of said details list */
     text-align: center;
 }
 
-/* Sets the properties of the images of other websites included in the showcase.html page */
-.img {
-    background-color: var(--dark);
-    border: solid var(--dark) 10px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    align-items: center;
-}
-
-.img a {
-    background-color: none;
-    color: var(--main-txt);
-    width: fit-content;
-    margin: 0 0 10px 0;
-}
-
-.img .gallery {
-    background-color: var(--main-txt);
-    margin: 0;
-    border: transparent; /* Removes a border that would normally be there */
-    background-color: var(--dark);
+#extra-bottom-padding {
+    padding-bottom: 10vh;
 }
 
 /* Determines how the end screen on the showcase.html page looks, it's similar to the index.html
@@ -348,7 +327,7 @@ endscreen, but slightly different so it needs a different class */
     align-items: center;
     text-align: center;
     font-size: 3.5vh;
-    padding: 4vh;
+    padding: 10vh 4.5vw;
 }
 
 .plug a, .text a {
@@ -421,6 +400,27 @@ as it has some differences from the index.html and showcase.html pages */
 .end a:hover {
     color: var(--alt-txt);
 }
+
+/* Sets the properties of the images of other websites included in the showcase.html page */
+.img a {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.img a:hover {
+    background-color: transparent;
+}
+
+.img .gallery {
+    border: 4px solid var(--main-txt);
+    transition: border 0.3s ease;
+}
+
+.img .gallery:hover {
+    border: 4px solid var(--main-bg);
+}
+
 
 /* The following tags apply when the screen is 865 pixels wide or less */
 @media only screen and (max-width: 865px) {
