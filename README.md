@@ -1,4 +1,4 @@
 # Designer-For-Hire
 This is a website built for a school Digital Technologies Assignment. It is not meant to function as a regular website and I have not included any of my actual details (apart from my name, age, and a bit about my life) because I am not a real Freelance Web Designer, at least not yet ;)
 
-Mr Harding, if you're reading this, I know you said you had no expectations in relation to the README file but I figured I'd have a little fun with it anyway, this has actually been a pretty fun and stress relieving project for me to work on, which is ironic considering it's based on coding which is stereotypically an absolute nightmare
+Mr Harding, if you're reading this, I know you said you had no expectations in relation to the README file but I figured I'd have a little fun with it anyway, this has actually been a pretty fun and stress relieving project for me to work on, which is ironic considering it's based on coding which is stereotypically an absolute nightmare, cheers for making DIT fun this year.
