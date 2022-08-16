@@ -484,7 +484,8 @@ as it has some differences from the index.html and showcase.html pages */
 @media only screen and (max-width: 800px) {
     /* Resizes parts of the navigation bar so they don't completely break */
     nav ul a{
-        font-size: 2.5vw;
+        font-size: 3vw;
+        padding: 10px 7px;
     }
 
     nav h1 {
